@@ -1,0 +1,158 @@
+main img{
+  width:400px;
+  display:inline-block;
+  /* margin-right:100px; */
+  margin-left:130px;
+  height:400px;
+}
+h1{
+  font-size:40px;
+  margin:50px;
+  margin-left:0;
+  margin-right:20px;
+  margin-bottom:70px;
+  width:75%;
+  text-align:center;
+  display:inline-block;
+  background-color:white;
+  height:70px;
+  line-height:70px;
+  border:1px solid #34AAB8;
+  font-family:'shigoto';
+}
+#main{
+  width:90%;
+  margin:0 auto;
+  margin-bottom:100px;
+}
+.on{
+  display: inline-block;
+  width:20%;
+  height:60px;
+  background-color:#ff9096;
+  text-align:center;
+  line-height:60px;
+  color:white;
+  border-radius: 5px;
+  transition:0.2s;
+}
+.on:active{
+  transform:translateY(3px);
+}
+.off{
+  display: inline-block;
+  width:20%;
+  height:60px;
+  background-color:rgb(134, 134, 134);
+  text-align:center;
+  line-height:60px;
+  color:white;
+  border-radius: 5px;
+  transition:0.2s;
+}
+.off:active{
+  transform:translateY(3px);
+}
+#mates{
+  width:calc(100% - 800px);
+  display:inline-block;
+  float:right;
+  font-size:20px;
+  height:400px;
+  margin-right:130px;
+}
+.title{
+  font-size:30px;
+  text-align:center;
+  height:30px;
+  margin-bottom:10px;
+  margin-top:20px;
+  font-family:'crayon_1-1';
+}
+#mates ul{
+  background-color:white;
+  height:340px;
+  padding:10px;
+}
+#mates li{
+  width:100%;
+  height:50px;
+  padding:10px;
+}
+#mates li p{
+  display:inline-block;
+}
+#mates ul li p:first-child{
+display:inline-block;
+  text-align: left;
+  width:60%;
+  margin:0;
+}
+#mates ul li p:last-child{
+display:inline-block;
+text-align: right;
+  width:30%;
+}
+#mates li + li{
+  border-top:1px solid #34abb881;
+}
+#tags{
+  height:50px;
+  width:30%;
+  margin:30px auto;
+  text-align:center;
+  border-top:1px solid #34AAB8;
+  border-bottom:1px solid #34AAB8;
+}
+#tags a{
+  margin:5px 10px;
+  color:#ff9096;
+  font-size:20px;
+  line-height:50px;
+}
+.pro{
+  width:60%;
+  margin:20px auto;
+  height:150px;
+  padding:10px;
+  padding-top:40px;
+  padding-bottom:20px;
+}
+.pro + .pro{
+  border-top:1px solid rgba(70, 28, 0,0.5);
+}
+
+
+@media (max-width: 768px) {
+  h1{
+    width:100%;
+    margin:50px 0 30px;
+  }
+  #button{
+    width:100%;
+    height:40px;
+    line-height:40px;
+    margin-bottom:50px;
+  }
+  main img{
+    width:100%;
+    height:300px;
+    margin:0;
+  }
+  #mates{
+    width:100%;
+    margin:0;
+    float: none;
+    height:auto;
+  }
+  #mates ul{
+    height:auto;
+  }
+  #tags{
+    width:100%;
+  }
+  .pro{
+    width:80%;
+    margin:10px auto;
+  }
+}

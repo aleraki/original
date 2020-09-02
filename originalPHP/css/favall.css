@@ -1,0 +1,222 @@
+main{
+  padding-top:30px;
+  color:rgb(88, 88, 88);
+  background-image:url("../img/back.jpg");
+  background-color:rgba(255,255,255,0.3);
+  background-blend-mode:lighten;
+  padding-bottom:80px;
+}
+h1{
+  font-size:40px;
+  width:100%;
+  margin:60px auto;
+  text-align:center;
+  display:inline-block;
+  height:70px;
+  line-height:70px;
+  color:rgba(70, 28, 0, 0.808);
+  margin-bottom:100px;
+  font-family:'crayon_1-1';
+}
+#new{
+  display: inline-block;
+  width:20%;
+  height:60px;
+  background-color:#34AAB8;
+  text-align:center;
+  line-height:60px;
+  color:white;
+  border-radius: 5px;
+}
+main img{
+  width:100%;
+  height:290px;
+  margin:0 auto;
+}
+#main{
+  width:80%;
+  margin:0 auto;
+}
+h2{
+  font-size:25px;
+  margin:10px 20px;
+  margin-bottom:20px;
+  text-align:center;
+}
+h2 + p{
+  padding:10px;
+}
+.flex{
+  display:flex;
+}
+.recipecon{
+  width:calc(100% / 3);
+  margin:30px;
+  height:490px;
+}
+.recipe{
+  background-color:white;
+  height:420px;
+}
+.typetag{
+  position: relative;
+  z-index: 1;
+}
+.syosai{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:290px;
+  text-indent:-999px;
+  z-index:2;
+}
+.syosai1{
+  position: absolute;
+  top:40px;
+  left:0;
+  width:100%;
+  height:290px;
+  text-indent:-999px;
+  z-index:2;
+}
+.typetag:hover{
+  opacity:0.8;
+}
+.recipecon{
+  position: relative;
+  z-index: 1;
+  background-color:white;
+}
+.recipecon:hover{
+  opacity:0.8;
+}
+.hov{
+  transition: 0.5s;
+}
+.hov:hover{
+  opacity:0.9;
+  color:#ff9096;
+}
+#button{
+  height:50px;
+  width:70%;
+  font-family:'Nちはやフォント+';
+  background-color:#34AAB8;
+  color:#fff;
+  margin:100px auto;
+  display:block;
+  border-color: white;
+  box-shadow: none;
+  border-radius: 5px;
+  text-align:center;
+  line-height:50px;
+  transition:0.1s;
+}
+#button:active{
+  transform:translateY(2px);
+}
+.edit{
+  display:inline-block;
+  width:100%;
+  text-align:center;
+  margin:10px 0;
+  color:#ff9096;
+  border-radius:10px;
+  padding:5px;
+}
+.menugroup{
+  background-image:url("../img/mat.jpg");
+  border:2px solid #ff9096;
+  border-radius: 5px;
+}
+.menuall{
+  margin-bottom:50px;
+}
+.type{
+  color:#34AAB8;
+  text-align:center;
+  display:block;
+  height:10px;
+  position: absolute;
+  bottom:15px;
+  margin:0 auto;
+  width:100%;
+  font-size:20px;
+}
+.deletemenu{
+  display:inline-block;
+  width:100%;
+  color:#34AAB8;
+  text-align: center;
+  line-height:100px;
+  font-size:20px;
+  transition:all 300ms 0s ease;
+}
+.menusupun{
+  display:flex;
+  width:40%;
+  margin:10px auto;
+  background-color: #fff;
+  margin-bottom:30px;
+  border-radius: 20px;
+  border:3px solid #ff9096;
+  transition:all 300ms 0s ease;
+  padding:10px;
+  height:120px;
+}
+.supun{
+  width:100px;
+  height:100px;
+  display:inline-block;
+  margin:0;
+  transition:all 300ms 0s ease;
+}
+.favobutton{
+  width:80%;
+  height:30px;
+  text-align:center;
+  color:white;
+  margin:10px auto;
+  border-radius: 10px;
+  line-height:30px;
+  transition:0.2s;
+  cursor: pointer;
+}
+.favobutton:active{
+  transform:translateY(3px);
+}
+.on{
+  background-color:#ff9096;
+}
+.on:active{
+  transform:translateY(3px);
+}
+.off{
+  background-color:rgb(134, 134, 134);
+}
+.off:active{
+  transform:translateY(3px);
+}
+#nofav{
+  text-align:center;
+}
+@media (max-width: 768px) {
+  body{
+    width:100%;
+  }
+  .flex{
+    display:block;
+  }
+  .recipecon{
+    width:80%;
+    margin:30px auto;
+  }
+  .menugroup{
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .menusupun{
+    width:100%;
+  }
+}

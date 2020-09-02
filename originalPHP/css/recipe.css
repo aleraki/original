@@ -1,0 +1,287 @@
+main{
+  padding-top:30px;
+  color:rgb(88, 88, 88);
+  background-image:url("../img/back.jpg");
+  background-color:rgba(255,255,255,0.3);
+  background-blend-mode:lighten;
+  padding-bottom:80px;
+}
+#h1{
+  font-size:40px;
+  margin:50px;
+  margin-left:0;
+  margin-right:20px;
+  margin-bottom:70px;
+  width:75%;
+  text-align:center;
+  display:inline-block;
+  height:70px;
+  line-height:70px;
+  color:rgba(70, 28, 0, 0.808);
+  font-family:'crayon_1-1';
+}
+h1{
+  width:550px;
+  font-size:40px;
+  margin:50px;
+  margin-left:0;
+  margin-right:60px;
+  margin-bottom:70px;
+  text-align:center;
+  display:inline-block;
+  height:70px;
+  line-height:70px;
+  font-family:'crayon_1-1';
+}
+h1 a{
+  color:rgba(70, 28, 0, 0.808);
+
+}
+#new{
+  display: inline-block;
+  width:20%;
+  height:60px;
+  background-color:#34AAB8;
+  text-align:center;
+  line-height:60px;
+  color:white;
+  border-radius: 5px;
+  transition:0.1s;
+}
+#new:active{
+  transform:translateY(2px);
+
+}
+main img{
+  width:100%;
+  height:290px;
+  margin:0 auto;
+}
+#main{
+  width:80%;
+  margin:0 auto;
+}
+h2{
+  font-size:25px;
+  margin:10px 20px;
+  margin-bottom:20px;
+  text-align:center;
+}
+h2 + p{
+  padding:10px;
+}
+.flex{
+  display:flex;
+}
+.recipecon{
+  width:calc(100% / 3);
+  margin:30px;
+}
+.recipe{
+  background-color:white;
+  height:420px;
+}
+.typetag{
+  position: relative;
+  z-index: 1;
+}
+.syosai{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:290px;
+  text-indent:-999px;
+  z-index:2;
+}
+.syosai1{
+  position: absolute;
+  top:40px;
+  left:0;
+  width:100%;
+  height:290px;
+  text-indent:-999px;
+  z-index:2;
+}
+.typetag:hover{
+  opacity:0.8;
+}
+.recipecon{
+  position: relative;
+  z-index: 1;
+  background-color:white;
+}
+.recipecon:hover{
+  opacity:0.8;
+}
+form{
+  width:800px;
+  margin:10px auto;
+  text-align: center;
+}
+input[type="text"]{
+  width:200px;
+  height:30px;
+}
+#search_button{
+  width:80px;
+  font-family:'Nちはやフォント+';
+  height:30px;
+  font-size:15px;
+  background-color:rgba(70, 28, 0, 0.541);
+  border-radius:5px;
+  color:white;
+}
+#age_button{
+  width:100px;
+  font-family:'Nちはやフォント+';
+  height:20px;
+  font-size:13px;
+  background-color:#ff9096;
+  border-radius:5px;
+  color:white;
+  border:none;
+}
+#result{
+  border-top:1px solid #34AAB8;
+  border-bottom:1px solid #34AAB8;
+  text-align:center;
+  width:200px;
+  margin:30px auto;
+  margin-top:50px;
+  padding:10px;
+}
+iframe{
+  margin-right:50px;
+  float:right;
+}
+#top{
+  width:70px;
+  height:70px;
+  position: fixed;
+  right:50px;
+  bottom:100px;
+  background-color:#34AAB8;
+  opacity:0.8;
+  border-radius:50%;
+  z-index:10;
+}
+#top a{
+  position: relative;
+  display:block;
+  width:50px;
+  height:50px;
+}
+#top a::before{
+  font-family:'Font Awesome 5 Free';
+  font-weight:900;
+  content:'\f102';
+  font-size:35px;
+  color:#fff;
+  position: absolute;
+  width:25px;
+  height:25px;
+  top:18px;
+  bottom:0;
+  right:0;
+  left:22px;
+  text-align:center;
+}
+#reset{
+  text-align:center;
+  background-color:#ff9096be;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  top: 35px;
+  left: 410px;
+  z-index: 5;
+  border-radius: 5px;
+  opacity: 0.8;
+  padding:0 5px;
+}
+#reset:before{
+  content:"";
+  position: absolute;
+  top:-30px;
+  left:50%;
+  border:15px solid transparent;
+  border-bottom:15px solid #ff9096be;
+}
+form{
+  position: relative;
+}
+#radioform{
+  /* display:block; */
+  margin:10px auto;
+  z-index:999;
+  background-color:white;
+  border-radius:10px;
+  height:50px;
+  width:300px;
+  box-shadow: black;
+  line-height:50px;
+  position: absolute;
+  top:40px;
+  left:250px;
+  margin-left:0;
+}
+.hidden{
+ display:none;
+}
+
+@media (max-width: 768px) {
+  body{
+    width:100%;
+  }
+  #h1{
+    width:100%;
+    margin:0;
+    margin-bottom:30px;
+  }
+  h1{
+    width:100%;
+    margin:0;
+    margin-bottom:30px;
+  }
+  #reset{
+    display:none;
+  }
+  #new{
+    width:100%;
+    height:30px;
+    line-height:30px;
+    margin-bottom:30px;
+  }
+  iframe{
+    display:none;
+    margin:0 auto;
+    margin-bottom:30px;
+  }
+  form{
+    width:100%;
+    margin-bottom:30px;
+  }
+  .flex{
+    display:block;
+  }
+  .recipecon{
+    width:80%;
+    margin:30px auto;
+  }
+  input[type="text"]{
+    width:70%;
+  }
+  #search_button{
+    float:right;
+  }
+  input[type="radio"]{
+    margin-bottom:10px;
+  }
+  #radioform{
+    left:0;
+    margin-left:10%;
+    width:80%;
+  }
+}

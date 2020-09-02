@@ -1,0 +1,286 @@
+main{
+  padding-top:30px;
+  color:rgb(88, 88, 88);
+  background-image:url("../img/back.jpg");
+  background-color:rgba(255,255,255,0.3);
+  background-blend-mode:lighten;
+  padding-bottom:80px;
+}
+.content{
+  width:95%;
+  margin:50px auto;
+  border:2px dotted rgb(70, 28, 0);
+  border-radius: 20px;
+  margin-bottom:80px;
+  padding-right:70px;
+  padding-left:70px;
+}
+.color{
+  color:#ff9096;
+  font-size:40px;
+}
+#top a{
+  font-size:30px;
+}
+.content h1{
+  font-size:40px;
+  width:200px;
+  margin:25px auto;
+  text-align:center;
+  padding-top:30px;
+  font-family:'crayon_1-1';
+}
+main img{
+  width:100%;
+  height:290px;
+  margin:0 auto;
+}
+.flex{
+  display:flex;
+}
+.typetag{
+  width:calc(100% / 3);
+  margin:30px;
+  height:460px;
+}
+.recipecon{
+  width:calc(100% / 3);
+  margin:30px;
+  height:420px;
+}
+.recipe{
+  background-color:white;
+  height:420px;
+}
+#createmenu{
+  padding-top:10px;
+  margin:10px auto;
+  display:block;
+  color:#ff9096;
+  font-size:20px;
+  text-align:center;
+  width:120px;
+}
+.type{
+  font-size:25px;
+  text-align:center;
+  padding-bottom:15px;
+  color:#34AAB8;
+}
+.content h2{
+  font-size:20px;
+  font-weight:bold;
+  text-align:center;
+  margin:10px 0;
+  margin-bottom:20px;
+}
+.content h2 + p{
+  padding:5px;
+}
+#favoritemore , #mymore , #menumore{
+  height:50px;
+  width:70%;
+  font-family:'Nちはやフォント+';
+  background-color:rgba(70, 28, 0, 0.479);
+  color:#fff;
+  margin:0 auto;
+  display:block;
+  border-color: white;
+  box-shadow: none;
+  border-radius: 5px;
+  margin-bottom:50px;
+  margin-top:30px;
+  transition:0.1s;
+  text-align:center;
+  line-height:50px;
+}
+#favoritemore:active , #mymore:active{
+  transform:translateY(2px);
+}
+#favoritemore:hover{
+  opacity:0.8;
+}
+#mymore:hover{
+  opacity:0.8;
+}
+.content:last-child{
+  margin-bottom:0;
+}
+.typetag{
+  position: relative;
+  z-index: 1;
+}
+.syosai{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:290px;
+  text-indent:-999px;
+  z-index:2;
+}
+.syosai1{
+  position: absolute;
+  top:40px;
+  left:0;
+  width:100%;
+  height:290px;
+  text-indent:-999px;
+  z-index:2;
+}
+.recipe:hover{
+  opacity:0.8;
+}
+.recipecon{
+  position: relative;
+  z-index: 1;
+  background-color:white;
+}
+.recipecon:hover{
+  opacity:0.8;
+}
+.edit{
+  display:inline-block;
+  width:100%;
+  text-align:center;
+  margin:10px 0;
+  color:#ff9096;
+  border-radius:10px;
+  padding:5px;
+}
+/* #draw{
+  display:block;
+  width:100px;
+  margin:0 auto;
+  color:#34AAB8;
+  text-align: center;
+} */
+#top{
+  width:70px;
+  height:70px;
+  position: fixed;
+  right:50px;
+  bottom:100px;
+  background-color:#34AAB8;
+  opacity:0.8;
+  border-radius:50%;
+  z-index:10;
+}
+#top a{
+  position: relative;
+  display:block;
+  width:50px;
+  height:50px;
+}
+#top a::before{
+  font-family:'Font Awesome 5 Free';
+  font-weight:900;
+  content:'\f102';
+  font-size:35px;
+  color:#fff;
+  position: absolute;
+  width:25px;
+  height:25px;
+  top:18px;
+  bottom:0;
+  right:0;
+  left:22px;
+  text-align:center;
+}
+.hidden{
+  display:none;
+}
+.nomore{
+  background-color:#34AAB8;
+  display: block;
+  width:40%;
+  height:60px;
+  line-height:60px;
+  text-align:center;
+  margin:50px auto;
+  color:white;
+  border-radius: 50px;
+	transition: all 0.5s ease;
+}
+.nomore:hover{
+  color:#34AAB8;
+  border:1px solid #34AAB8;
+  background-color:#fff;
+}
+.nomore:nth-child(even){
+  background-color:#ff9096;
+	transition: all 0.4s ease;
+}
+.nomore:nth-child(even):hover{
+  color:#ff9096;
+  background-color:#fff;
+  border:1px solid #ff9096;
+}
+
+@media (max-width: 768px) {
+  body{
+    width:100%;
+  }
+  .flex{
+    display:block;
+  }
+  .nomore{
+
+  width:70%;
+}
+  .recipe{
+    height:400px;
+    width:100%;
+    margin:50px 0;
+  }
+  .recipecon{
+    height:400px;
+    width:100%;
+    margin:20px 0;
+  }
+  .recipe{
+    height:400px;
+    width:100%;
+    margin:20px 0;
+  }
+  .typetag{
+    width:100%;
+    margin:10px 0;
+    height:500px;
+  }
+  .recipe img{
+    height:300px;
+  }
+  #top{
+  width:50px;
+  height:50px;
+  position: fixed;
+  right:20px;
+  bottom:20px;
+  background-color:#34AAB8;
+  opacity:0.8;
+  border-radius:50%;
+  z-index:10;
+}
+#top a{
+  position: relative;
+  display:block;
+  width:50px;
+  height:50px;
+}
+#top a::before{
+  font-family:'Font Awesome 5 Free';
+  font-weight:900;
+  content:'\f102';
+  font-size:20px;
+  color:#fff;
+  position: absolute;
+  width:20px;
+  height:20px;
+  top:15px;
+  bottom:0;
+  right:0;
+  left:14px;
+  text-align:center;
+}
+}

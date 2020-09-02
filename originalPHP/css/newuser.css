@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+/*---Reset---*/
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+textarea { font-size: 100%; vertical-align:middle;}
+img { border-style: none; display: block; }
+hr { display: none; }
+em{font-style: normal}
+input{line-height:auto;vertical-align:middle;}
+strong.more{color:#c30}
+a{text-decoration: none;}
+
+html {
+}
+
+body {
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+/*クラス定義*/
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix {
+	display: inline-table;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix{height: 1%;}
+*+html .clearfix{min-height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+@font-face{
+  font-family:'Nちはやフォント+';
+  src: url('../Nちはやフォント+.ttf');
+}
+body{
+  font-family:'Nちはやフォント+';
+}
+header{
+  height:auto;
+  width:100%;
+}
+header img{
+  width:400px;
+  margin:0 auto;
+}
+main{
+  border-bottom:2px solid #34AAB8;
+  border-top:2px solid #ff9096;
+  background-image:url("../img/back.jpg");
+  background-color:rgba(255,255,255,0.3);
+  background-blend-mode:lighten;
+  color:rgb(88, 88, 88);
+}
+#title{
+  font-size:20px;
+  height:50px;
+  line-height:50px;
+  text-align: center;
+  color:rgb(70, 28, 0);
+  font-family:'crayon_1-1';
+}
+label p{
+  font-size:15px;
+  height:20px;
+  text-align:center;
+  margin:5px 0;
+}
+#main{
+  width:80%;
+  margin:0 auto;
+  text-align: center;
+  margin-top:50px;
+  margin-bottom:50px;
+}
+form{
+  /* height:300px; */
+  width:100%;
+  margin-top:50px;
+}
+label{
+  display:block;
+  height:50px;
+  width:360px;
+  margin:10px auto;
+}
+label input{
+  width:100%;
+  height:25px;
+}
+#button{
+  display:block;
+  width:100px;
+  margin:0 auto;
+  background-color:#34AAB8;
+  color:white;
+  border:1px solid #fff;
+  border-radius:5px;
+  height:35px;
+  width:100px;
+  font-family:'Nちはやフォント+';
+  cursor:pointer;
+  margin-top:20px;
+}
+#button:hover{
+  opacity:0.9;
+}
+main a{
+  display:block;
+  margin-bottom:40px;
+  color:#ff9096;
+  font-weight:bold;
+  font-size:20px;
+}
+footer{
+  color:#34AAB8;
+  height:100px;
+}
+footer p{
+  margin:0 auto;
+  width:300px;
+  text-align:center;
+  line-height:100px;
+}
+@font-face{
+  font-family:'crayon_1-1';
+  src: url('../crayon_1-1.ttf');
+}
+footer p{
+  font-family:'crayon_1-1';
+}
+.red{
+  text-align:center;
+  color:#ff9096;
+}

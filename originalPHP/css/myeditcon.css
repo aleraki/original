@@ -1,0 +1,88 @@
+h1{
+  font-size:40px;
+  width:100%;
+  margin:60px auto;
+  text-align:center;
+  display:inline-block;
+  height:70px;
+  line-height:70px;
+  color:rgba(70, 28, 0, 0.808);
+  margin-bottom:100px;
+  font-family:'crayon_1-1';
+}
+#editcon{
+  height:50px;
+  width:70%;
+  font-family:'Nちはやフォント+';
+  background-color:#ff9096;
+  color:#fff;
+  margin:0 auto;
+  display:block;
+  border-color: white;
+  box-shadow: none;
+  border-radius: 5px;
+  margin-bottom:50px;
+  margin-top:30px;
+}
+#button{
+  height:50px;
+  width:70%;
+  font-family:'Nちはやフォント+';
+  background-color:#34AAB8;
+  color:#fff;
+  margin:0 auto;
+  display:block;
+  border-color: white;
+  box-shadow: none;
+  border-radius: 5px;
+  margin-bottom:50px;
+  margin-top:30px;
+  text-align:center;
+  line-height:50px;
+}
+#preview{
+  width:200px;
+  height:200px;
+  margin:0 auto;
+}
+.titlep{
+  color:#34AAB8;
+  font-size:25px;
+  width:100%;
+  text-align:center;
+  height:60px;
+  margin:10px;
+  line-height:60px;
+}
+.sub{
+  font-size:18px;
+  width:100%;
+  text-align:center;
+  height:60px;
+  margin:10px;
+  line-height:60px;
+}
+#matetitle{
+  margin-top:200px;
+}
+
+
+@media (max-width: 768px) {
+  .sub{
+    margin:10px 0;
+    height:auto;
+  }
+  .titlep{
+    margin:10px 0;
+  }
+  .ressub{
+    height:auto;
+  }
+  #matetitle{
+    margin-top:300px;
+  }
+  #preview{
+    width:90%;
+    height:300px;
+  }
+}
